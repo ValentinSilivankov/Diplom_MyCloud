@@ -59,17 +59,5 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "postcss.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/ValentinSilivankov/Diplom_MyCloud.git"
-  },
-  "author": "LiTiN",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ValentinSilivankov/Diplom_MyCloud/issues"
-  },
-  "homepage": "https://github.com/ValentinSilivankov/Diplom_MyCloud#readme"
+  }
 }
