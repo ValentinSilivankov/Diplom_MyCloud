@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { variables } from './../utils/variables';
-import axios from 'axios';
 
 function Card({ props }) {
 
@@ -17,31 +16,6 @@ function Card({ props }) {
         newNameFile += '...';
     }
 
-
-    // const urlFile = `${variables.STATIC_URL}${props.file_file}`
-    // async function downloadFileAtURL(urlFile, fileName) {
-    //     const file_test = "/frontend/package.json"
-    //     // "http://127.0.0.1:8000/static/files/user_test111%40email.com/2022-12-01T09_44_56_568Z-eresolve-report.txt";
-
-    //     const response = await axios.get({
-    //         url: file_test,
-    //         // method: "GET",
-    //         responseType: "blob",
-    //         headers: { "Content-type": "application/octet-stream", },
-    //         // mode: 'no-cors',
-    //     })
-    //     console.log(response)
-    //     const blob = await response.blob();
-    //     console.log(String(file_test))
-    //     const downloadURL = window.URL.createObjectURL(new Blob([blob]));
-    //     const link = document.createElement('a');
-    //     link.href = downloadURL
-    //     link.setAttribute("download", fileName)
-    //     document.body.appendChild(link)
-    //     link.click();
-    //     link.parentNode.removeChild(link)
-
-    // }
 
     return (
         <div>
@@ -81,14 +55,7 @@ function Card({ props }) {
                         </Link>
                     </Tippy>
                     <Tippy content={<span>Download file</span>}>
-                        {/* <button onClick={() => { */}
-                        {/* downloadFileAtURL(
-                                `${variables.STATIC_URL}${props.file_file}`,
-                                `${props.file_name}.${props.file_type}`)
-                        }}> */}
-                        {/* <img className='h-10 w-10 rounded-xl' src={download_file} alt='download file' /> */}
-                        {/* </button> */}
-                        <a href={`${variables.STATIC_URL}${props.file_file}`} target='_blank' download>
+                        <a href={`${variables.STATIC_URL}${props.file_file}`} target='_blank' rel="noreferrer" download>
                             <img className='h-10 w-10 rounded-xl' src={download_file} alt='download file' />
                         </a>
                     </Tippy>
