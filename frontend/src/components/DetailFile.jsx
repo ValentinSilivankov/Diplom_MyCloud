@@ -8,7 +8,7 @@ import { deleteFile, getDetailFile } from './../actions/filesActions';
 import ScreenFile from '../assets/file-blank-solid-240.png';
 import { variables } from './../utils/variables';
 import { toast } from 'react-toastify';
-
+/* eslint-disable no-unused-vars */
 function DetailFile() {
     const navigate = useNavigate();
     // catch ID useParams
@@ -54,10 +54,10 @@ function DetailFile() {
                                 {
                                     variables.format_files.includes(file.file_type) ?
                                         (
-                                            // eslint-disable-next-line jsx-a11y/alt-text
-                                            <a href={`${variables.STATIC_URL}${file.file_file}`} target='_blank'>
+                                            <a href={`${variables.STATIC_URL}${file.file_file}`} target='_blank' rel='noreferrer'>
                                                 <img className="object-cover object-center rounded-xl"
-                                                    src={`${variables.STATIC_URL}${file.file_file}`} />
+                                                    src={`${variables.STATIC_URL}${file.file_file}`} 
+                                                    alt=''/>
                                             </a>
                                         ) : (
                                             // eslint-disable-next-line jsx-a11y/alt-text

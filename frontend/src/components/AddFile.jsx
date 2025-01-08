@@ -6,7 +6,6 @@ import { addFileList } from '../actions/filesActions';
 import FormContainer from './FormContainer';
 import { ImUpload } from 'react-icons/im';
 import { TbArrowBackUp } from 'react-icons/tb';
-import uploadImg from '../assets/cloud-upload-regular-240.png';
 import { getListFiles } from './../actions/filesActions';
 import {  toast } from 'react-toastify';
 
@@ -31,6 +30,7 @@ const AddFile = () => {
     const [description, setDescription] = useState('')
     const [size_file, setSizeFile] = useState('')
     const [create_at, setCreate] = useState('')
+    /* eslint-disable no-unused-vars */
     const [file_type, setType] = useState('')
 
     const nameRef = useRef('');

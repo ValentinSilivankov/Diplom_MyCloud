@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useRef } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { TbArrowBackUp } from 'react-icons/tb';
@@ -34,6 +35,7 @@ function EditFile() {
     useEffect(() => {
         dispatch(getDetailFile(id));
         setDescription(file.description);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id, dispatch])
 
 
@@ -76,10 +78,11 @@ function EditFile() {
                                         {
                                             variables.format_files.includes(file.file_type) ?
                                                 (
-                                                    // eslint-disable-next-line jsx-a11y/alt-text
-                                                    <a href={`${variables.STATIC_URL}${file.file_file}`} target='_blank'>
+                                                    <a href={`${variables.STATIC_URL}${file.file_file}`} target='_blank' rel='noreferrer'>
+                                                        
                                                         <img className="h-40 w-40 object-cover object-center rounded-xl "
-                                                            src={`${variables.STATIC_URL}${file.file_file}`} />
+                                                            src={`${variables.STATIC_URL}${file.file_file}`}
+                                                            alt="" />
                                                     </a>
                                                 ) : (
                                                     // eslint-disable-next-line jsx-a11y/alt-text

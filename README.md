@@ -27,7 +27,7 @@
 - Активировать виртуальную среду
   ```sh
   # для winodws
-    myvenv\Scripts\activate
+    venv\Scripts\activate
   # для linux
     source myvenv/bin/activate
     ```

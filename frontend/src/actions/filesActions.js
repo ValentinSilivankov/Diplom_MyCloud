@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from '../utils/axios';
 import { variables } from './../utils/variables';
 // Get files data from API

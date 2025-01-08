@@ -1,4 +1,4 @@
-
+/* eslint-disable no-unused-vars */
 import {
     GET_FILES_REQUEST,
     GET_FILES_FAIL,

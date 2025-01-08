@@ -24,7 +24,7 @@ const CardGrid = styled.div`
 const FilesList = () => {
 
     const history = useNavigate();
-
+    // eslint-disable-next-line no-unused-vars
     const location = useLocation()
     // GET data files from store
     const dispatch = useDispatch()
@@ -35,6 +35,7 @@ const FilesList = () => {
     const { files, loading, error } = fileList
 
     const userLogin = useSelector(state => state.userLogin)
+    // eslint-disable-next-line no-unused-vars
     const { error: userError, loading: userLoading, userInfo } = userLogin
 
     // on page load
