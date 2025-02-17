@@ -45,6 +45,3 @@ class FileSerializer(serializers.ModelSerializer):
         model = File_tb
         fields = '__all__'
         
-
-
-        
